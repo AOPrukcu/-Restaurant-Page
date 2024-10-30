@@ -4,3 +4,4 @@ const contactContents = [
     "<strong>Baby Bear</strong><br>Waiter<br>555-555-5556<br>totallyRealEmail@notFake.com"
 ];
 export default contactContents;
+

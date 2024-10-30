@@ -124,11 +124,58 @@ footer {
   padding: 15px;
 }
 .contact{
-  grid-column: 1 / -1; /* Başlık tüm sütunları kaplar */
+  grid-column: 1 / -1; 
   background-color:rgb(154, 12, 43);
   color: white;
   text-align: center;
   font-size: 2em;
   font-weight: bold;
-  padding: 10px 0; /* Sadece metin kadar yüksekliği belirler */
+  padding: 10px 0; 
+}
+
+.menu-item {
+  display: grid;
+  grid-template-areas:
+      "header image"
+      "description image"
+      "footer image";
+  grid-template-columns: 1fr 100px; 
+  gap: 10px; 
+   padding: 10px; 
+}
+
+.menu-header {
+  grid-area: header;
+  font-size: 1.5em; 
+  font-weight: bold; 
+}
+
+.menu-description {
+  grid-area: description;
+  font-size: 1em; 
+}
+
+.menu-footer {
+  grid-area: footer;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.menu-price {
+  font-weight: bold; 
+  color: green;
+}
+
+.menu-image {
+  width: 100%; 
+  height: auto; 
+  border: 2px #ffcc00 solid;
+  border-radius: 12px;
+}
+
+
+button.active {
+  background-color: white; 
+  color: black;
 }
