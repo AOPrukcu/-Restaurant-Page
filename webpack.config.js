@@ -24,7 +24,11 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i, // Resim dosyalarını tanımlar
+        type: 'asset/resource', // File-loader veya url-loader kullanmak için asset/resource tipi
+    },
     ],
   },
 };

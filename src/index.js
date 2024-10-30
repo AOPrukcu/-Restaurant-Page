@@ -1,4 +1,9 @@
-import "./styles.css";
+ import "./styles.css";
+ const content = document.querySelector("#content");
 
+ import { createMainPage, mainParagraphContents  } from './home.js';
+ import {contactContents } from "./about.js"
 
-console.log("Site test is it working ?")
+ document.addEventListener('DOMContentLoaded', () => {
+     createMainPage(3, contactContents,content,"title-item","Tradional Tacos");
+ });

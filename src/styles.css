@@ -40,18 +40,26 @@ button:hover {
   background: #f7f7f7;
 }
 
-.title-container {
-  padding: 15p 30px;
+.title-item {
+  padding: 15px 30px;
+  border-radius: 15px;
+  text-align: center;
 }
 
-.title {
-  grid-column: 1 / -1; /* Başlık tüm sütunları kaplar */
+.title,.contact {
   background-color:rgb(154, 12, 43);
   color: white;
   text-align: center;
   font-size: 2em;
   font-weight: bold;
   padding: 10px 0; /* Sadece metin kadar yüksekliği belirler */
+  border-radius: 15px;
+}
+.contact{
+  width: 300px;
+  margin: auto;
+  
+  
 }
 #content {
   display: flex; /* Flex düzeni */
@@ -82,11 +90,14 @@ button:hover {
     11% 100%,
     0 79%
   );
+ 
+   
+  
 }
 
 .card {
   width: 100%;
-  background-color: #eac82f;
+  background-color: #2bea42;
   clip-path: polygon(
     0 21%,
     11% 0,
@@ -98,6 +109,9 @@ button:hover {
     0 79%
   );
   padding: 10px;
+  font-size: 1.2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 footer {
   background-color: antiquewhite;
@@ -108,4 +122,13 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+}
+.contact{
+  grid-column: 1 / -1; /* Başlık tüm sütunları kaplar */
+  background-color:rgb(154, 12, 43);
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px 0; /* Sadece metin kadar yüksekliği belirler */
 }
