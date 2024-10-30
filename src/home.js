@@ -22,7 +22,7 @@ export function createMainPage(num, contents,content,title_class,title_text) {
     const card = document.createElement("div");
     card.classList.add("card");
     const p = document.createElement("p");
-    p.textContent = contents[i];
+    p.innerHTML = contents[i];
     card.appendChild(p);
     div.appendChild(card);
 
